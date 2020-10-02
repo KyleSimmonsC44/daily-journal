@@ -7,7 +7,6 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
 	font-family: "Comfortaa", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
@@ -16,4 +15,56 @@ textarea {
 h1,h2,h3,h4,h5,h6 {
   font-family: "Patua One", serif;
   letter-spacing: 2px;
+  text-shadow: 2px 2px 5px;
+}
+body{
+	background-image: url(https://images.creativemarket.com/0.1.0/ps/2396733/1360/906/m1/fpnw/wm1/gjonr9owaqr0wwxleludfl0r96i6ncpa2ax5syykfftylewtuaqlqeed03wvigs8-.jpg?1489331115&s=e8a667cbafa57fc454958dbbd2723288);
+	background-size: cover;
+}
+main{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.containerTop{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.containerMiddle{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.containerBottom{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 7%;
+	border: 3px inset rgb(46, 45, 45);
+	background-color: whitesmoke;
+}
+h3{
+	text-align: center;
+	text-shadow: 2px 2px 5px;
+}
+h1{
+	text-align: center;
+	background-image: url("https://static.tumblr.com/ga03bpe/6unm8mqyv/header-transpo.png");
+	background-size: contain;
+}
+.github{
+	margin-top: 3px;
+}
+#journalField{
+	border: 3px inset rgb(46, 45, 45);
+}
+select, form{
+	border: 3px inset rgb(46, 45, 45);
+}
+#buttonEdit{
+	border: 3px inset rgb(46, 45, 45);
+}
+#buttonDelete{
+	border: 3px inset rgb(46, 45, 45);
 }
