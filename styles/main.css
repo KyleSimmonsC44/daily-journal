@@ -58,13 +58,17 @@ h1{
 }
 #journalField{
 	border: 3px inset rgb(46, 45, 45);
+	box-shadow: 5px 10px;
 }
 select, form{
 	border: 3px inset rgb(46, 45, 45);
+	box-shadow: 3px 5px;
 }
 #buttonEdit{
 	border: 3px inset rgb(46, 45, 45);
+	box-shadow: 3px 5px;
 }
 #buttonDelete{
 	border: 3px inset rgb(46, 45, 45);
+	box-shadow: 3px 5px;
 }
