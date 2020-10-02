@@ -13,33 +13,64 @@
             <article class="containerTop">
                 <!-- date concepts covered, and mood -->
                 <div class="date">
+                    <h4>Date</h4>
                     <!-- calender date selector -->
+                    <form action="/action_page.php">
+                        <input type="date" id="date" name="date">
+                      </form>
                 </div>
                 <div class="concepts covered">
+                    <h4>Concept Covered</h4>
                     <!-- concepts covered text field -->
+                    <form action="/action_page.php">
+                        <input type="text" id="conceptCovered" name="conceptCovered"><br><br>
                 </div>
                 <div class="mood">
+                    <h4>Mood</h4>
                     <!-- drop down menu for moods -->
+                    <select name="mood" id="mood">
+                        <option value="happy">Happy!</option>
+                        <option value="content">Content</option>
+                        <option value="meh">meh.</option>
+                        <option value="frustrated">frustrated.</option>
+                        <option value="angry">&!#$@!%!#*#</option>
+                    </select>
                 </div>
             </article>
             <article class="containerMiddle">
                 <!-- journal entries, previous entries -->
                 <!-- largest flexbox -->
                 <div class="journalField">
+                    <h4>Journal Entry</h4>
                     <!-- journal entry text field -->
-                    
+                    <form action="/action_page.php">
+                        <textarea id="journalField" name="journalField" rows="15" cols="75">
+                          </textarea>
+                        </form>
                 </div>
                 <div class="prevEntries">
+                    <h4>Previous Entries</h4>
                     <!-- drop menu to highlight entry. 2 buttons Edit or Delete selected entry -->
+                    <select name="previousEntry" id="previousEntry">
+                        <option value="previousEntry">Previous Entry</option>>
+                        <option value="previousEntry">Previous Entry</option>>
+                        <option value="previousEntry">Previous Entry</option>>
+                        <option value="previousEntry">Previous Entry</option>>
+                        <option value="previousEntry">Previous Entry</option>>
+                        <option value="previousEntry">Previous Entry</option>>
+                        <option value="previousEntry">Previous Entry</option>>
+                        <option value="previousEntry">Previous Entry</option>>
+                        <option value="previousEntry">Previous Entry</option>>
+                      </select>
                 </div>
             </article>
             <article class="containerBottom">
                 <!-- github link, @copyright -->
                     <div class="github">
-                        
+                        <a href="https://github.com/KyleSimmonsC44">Check my GitHub</a>
                     </div>
                     <div class="copyright">
-
+                        <p>©Copyright Kyle Simmons</p>
                     </div>
             </article>
         </main>
