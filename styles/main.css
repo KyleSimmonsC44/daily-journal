@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,h6 {
   text-shadow: 2px 2px 5px;
 }
 body{
-	background-image: url(https://images.creativemarket.com/0.1.0/ps/2396733/1360/906/m1/fpnw/wm1/gjonr9owaqr0wwxleludfl0r96i6ncpa2ax5syykfftylewtuaqlqeed03wvigs8-.jpg?1489331115&s=e8a667cbafa57fc454958dbbd2723288);
+	background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7110feb6-9f1e-48dd-8f11-c7aba76770c9/d4f1qpa-fe9237e4-0706-45a7-9255-1171e87aae08.jpg/v1/fill/w_1217,h_657,q_75,strp/page_background_by_30ml-d4f1qpa.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sIm9iaiI6W1t7InBhdGgiOiIvZi83MTEwZmViNi05ZjFlLTQ4ZGQtOGYxMS1jN2FiYTc2NzcwYzkvZDRmMXFwYS1mZTkyMzdlNC0wNzA2LTQ1YTctOTI1NS0xMTcxZTg3YWFlMDguanBnIiwid2lkdGgiOiI8PTEyMTciLCJoZWlnaHQiOiI8PTY1NyJ9XV19.lKGE0R6dDkye9Dwez0UNl5vMrx-9cvtVmyhX6b8G-ZI);
 	background-size: cover;
 }
 main{
@@ -41,7 +41,7 @@ main{
 	flex-direction: row;
 	justify-content: space-evenly;
 	margin-top: 7%;
-	border: 3px inset rgb(46, 45, 45);
+	border: 2px solid black;
 	background-color: whitesmoke;
 }
 h3{
@@ -58,17 +58,22 @@ h1{
 }
 #journalField{
 	border: 3px inset rgb(46, 45, 45);
-	box-shadow: 5px 10px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
 }
 select, form{
 	border: 3px inset rgb(46, 45, 45);
-	box-shadow: 3px 5px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
 }
 #buttonEdit{
 	border: 3px inset rgb(46, 45, 45);
-	box-shadow: 3px 5px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
 }
 #buttonDelete{
 	border: 3px inset rgb(46, 45, 45);
-	box-shadow: 3px 5px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+#submitJournal{
+	border: 3px inset rgb(46, 45, 45);
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+
 }
