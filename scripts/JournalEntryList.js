@@ -1,4 +1,4 @@
-import { useJournalEntries } from './JournalDataProvider.js'
+import { useJournalEntries, getEntries } from './JournalDataProvider.js'
 import { JournalEntryComponent } from './JournalEntry.js'
 
 /*
@@ -6,21 +6,26 @@ import { JournalEntryComponent } from './JournalEntry.js'
  *    To render as many journal entry components as
  *    there are items in the collection exposed by the
  *    data provider component
- */
+//  */
+const eventHub = document.querySelector(".container")
+export const EntriesList = () =>{
+    getEntries()
+    .then(() =>{
+        const allEntries = useJournalEntries()
+        render(allEntries)
+    })
+}
 
- export const JournalEntryHTML = () =>{
 
-    const contentElement = document.querySelector(".prevEntries")
-
-    const journalLoop = useJournalEntries()
-
-    let journalHTMLRep = ""
-    for (const journalObject of journalLoop){
-        journalHTMLRep += JournalEntryComponent(journalObject)
+const render = (entriesArray) =>{
+    
+    const contentElement = document.querySelector(".prevEntries__scroll")
+     let journalHTMLRep = ""
+     for (const entriesObject of entriesArray){
+         journalHTMLRep += JournalEntryComponent(entriesObject)
+        }
+        contentElement.innerHTML =`
+        ${journalHTMLRep}`
     }
 
-contentElement.innerHTML +=`
-
-${journalHTMLRep}
-`
- }
+    eventHub.addEventListener("entriesStateChanged", () =>EntriesList())

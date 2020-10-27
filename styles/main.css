@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap');
 
 /*Typography
 --------------------------------------------------------------*/
@@ -13,13 +13,14 @@ textarea {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: "Patua One", serif;
+	font-family: 'Cormorant SC', serif;
   letter-spacing: 2px;
-  text-shadow: 2px 2px 5px;
+  /* text-shadow: 2px 2px 5px; */
+  color: white;
 }
 body{
-	background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7110feb6-9f1e-48dd-8f11-c7aba76770c9/d4f1qpa-fe9237e4-0706-45a7-9255-1171e87aae08.jpg/v1/fill/w_1217,h_657,q_75,strp/page_background_by_30ml-d4f1qpa.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sIm9iaiI6W1t7InBhdGgiOiIvZi83MTEwZmViNi05ZjFlLTQ4ZGQtOGYxMS1jN2FiYTc2NzcwYzkvZDRmMXFwYS1mZTkyMzdlNC0wNzA2LTQ1YTctOTI1NS0xMTcxZTg3YWFlMDguanBnIiwid2lkdGgiOiI8PTEyMTciLCJoZWlnaHQiOiI8PTY1NyJ9XV19.lKGE0R6dDkye9Dwez0UNl5vMrx-9cvtVmyhX6b8G-ZI);
-	background-size: cover;
+	background-color: #222222;
+	background: radial-gradient(ellipse at center,#222222 10%,#000 100%);
 }
 main{
 	display: flex;
@@ -29,12 +30,16 @@ main{
 .containerTop{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-between;
+	margin-left: 8px;
+	margin-right: 8px;
 }
 .containerMiddle{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-around;
+	margin-left: 8px;
+	margin-right: 8px;
 }
 .containerBottom{
 	display: flex;
@@ -42,23 +47,23 @@ main{
 	justify-content: space-evenly;
 	margin-top: 7%;
 	border: 2px solid black;
-	background-color: whitesmoke;
+	background-color: black;
+	color: white;
 }
 h3{
 	text-align: center;
-	text-shadow: 2px 2px 5px;
+	/* text-shadow: 2px 2px 5px; */
 }
-h1{
-	text-align: center;
-	background-image: url("https://static.tumblr.com/ga03bpe/6unm8mqyv/header-transpo.png");
-	background-size: contain;
-}
+
 .github{
-	margin-top: 3px;
+	margin-top: 1%;
 }
 #journalField{
 	border: 3px inset rgb(46, 45, 45);
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+	flex: 3;
+	background: radial-gradient(dimgray  0%, #222222 110%);
+	color: white;
 }
 select, form{
 	border: 3px inset rgb(46, 45, 45);
@@ -72,8 +77,75 @@ select, form{
 	border: 3px inset rgb(46, 45, 45);
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
 }
-#submitJournal{
+#saveEntry{
 	border: 3px inset rgb(46, 45, 45);
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+	background: radial-gradient(dimgray  0%, #222222 110%);
+	color: white;
 
 }
+.header{
+	margin: auto;
+	background-color: black;
+	justify-content: center;
+	display: flex;
+	border: 3px inset rgb(46, 45, 45);
+}
+
+.headerIMG{
+	justify-self: center;
+	width:35%;
+}
+.journalEntry{
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	flex-direction: column;
+	border: 2px inset black;
+	box-shadow: 0px 6px 13px 1px rgba(0,0,0,4);
+	background: radial-gradient(dimgray  0%, #222222 110%);
+	justify-content: center;
+	/* margin: 1%; */
+	flex-basis: 5%;
+	text-align: center;
+	/* animation-name: fade-in;
+	animation-duration: 3s; */
+	color:white;
+	/* border-radius: 10%;  */
+	padding: 5%;
+
+}
+
+#conceptCovered, #mood, #date{
+	background: radial-gradient(dimgray  0%, black 110%);
+	color: white;
+}
+.dropdown{
+	color:black;
+}
+.prevEntries__scroll{
+	overflow: scroll;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	max-height: 298px;
+	border: 3px inset rgb(46, 45, 45);
+}
+/* width */
+::-webkit-scrollbar {
+	width: 18px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: dimgray; 
+  }

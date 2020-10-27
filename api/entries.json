@@ -1,0 +1,39 @@
+{
+  "entries": [
+    {
+      "dateOfEntry": "2020-10-23",
+      "concept": "blahah",
+      "entry": "              blah",
+      "mood": "happy",
+      "id": 1
+    },
+    {
+      "dateOfEntry": "2020-10-23",
+      "concept": "...ALot",
+      "entry": "Today i figured out how to use APIs to make my journal entries display on my page after I write one!",
+      "mood": "content",
+      "id": 2
+    },
+    {
+      "dateOfEntry": "2020-10-23",
+      "concept": "CSS",
+      "entry": "              Im trying to figure out more advanced CSS tricks to make my page look better... but my brain is melting",
+      "mood": "meh",
+      "id": 3
+    },
+    {
+      "dateOfEntry": "2020-10-23",
+      "concept": "testing more css",
+      "entry": "              im getting angry now",
+      "mood": "frustrated",
+      "id": 4
+    },
+    {
+      "dateOfEntry": "2020-10-23",
+      "concept": "dfsdfg",
+      "entry": "              ghjfhgdfagfa",
+      "mood": "happy",
+      "id": 5
+    }
+  ]
+}

@@ -1,3 +1,6 @@
 console.log("Welcome to the main module")
-import { JournalEntryHTML} from './JournalEntryList.js'
-JournalEntryHTML ()
+import {EntriesList } from './JournalEntryList.js'
+import { EntryForm } from './JournalForm.js'
+
+EntriesList()
+EntryForm()
