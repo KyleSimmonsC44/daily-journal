@@ -61,7 +61,7 @@ h3{
 #journalField{
 	border: 3px inset rgb(46, 45, 45);
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-	flex: 3;
+	min-width: 552px;
 	background: radial-gradient(dimgray  0%, #222222 110%);
 	color: white;
 }
@@ -113,6 +113,7 @@ select, form{
 	color:white;
 	/* border-radius: 10%;  */
 	padding: 5%;
+	min-width: 600px;
 
 }
 
@@ -149,3 +150,7 @@ select, form{
   ::-webkit-scrollbar-thumb:hover {
 	background: dimgray; 
   }
+
+  /* .logo{
+	  
+  } */

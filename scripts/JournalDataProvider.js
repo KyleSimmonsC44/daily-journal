@@ -17,7 +17,7 @@ const dispatchStateChangeEvent = () =>{
 
 let entries = []
 export const getEntries = () => {
-    return fetch('http://localhost:8088/entries')
+    return fetch('http://localhost:8088/entries?_expand=mood')
         .then(response => response.json())
         .then(parsedEntries => {
             entries = parsedEntries

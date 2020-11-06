@@ -1,5 +1,6 @@
 import { useJournalEntries, getEntries } from './JournalDataProvider.js'
 import { JournalEntryComponent } from './JournalEntry.js'
+import { EntryForm } from './JournalForm.js'
 
 /*
  *  Purpose:
@@ -8,6 +9,7 @@ import { JournalEntryComponent } from './JournalEntry.js'
  *    data provider component
 //  */
 const eventHub = document.querySelector(".container")
+eventHub.addEventListener("entriesStateChanged", () =>EntriesList())
 export const EntriesList = () =>{
     getEntries()
     .then(() =>{
@@ -27,5 +29,3 @@ const render = (entriesArray) =>{
         contentElement.innerHTML =`
         ${journalHTMLRep}`
     }
-
-    eventHub.addEventListener("entriesStateChanged", () =>EntriesList())

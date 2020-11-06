@@ -5,7 +5,7 @@ export const JournalEntryComponent = (entry) => {
                 <p>Date: ${entry.dateOfEntry}<p>
                 <p>Concept: ${entry.concept}</p>
                 <p>Entry: ${entry.entry}</p>
-                <p>Mood: ${entry.mood}</p>
+                <p>Mood: ${entry.mood.label}</p>
             
         </section>
     `

@@ -1,10 +1,11 @@
 import {saveEntries} from "./JournalDataProvider.js"
+import { useMood, getMood } from "./mood/MoodDataProvider.js"
 
 const contentTarget = document.querySelector(".container")
 
 const eventHub = document.querySelector(".container")
 
-const render = () =>{
+const render = (moodArray) =>{
     contentTarget.innerHTML=`
     <article class="containerTop">
     <!-- date concepts covered, and mood -->
@@ -25,12 +26,12 @@ const render = () =>{
         <h4>Mood</h4>
         <!-- drop down menu for moods -->
         <select name="mood" id="mood">
-            <option class="dropdown" value="happy">Happy!</option>
-            <option class="dropdown" value="content">Content</option>
-            <option class="dropdown" value="meh">meh.</option>
-            <option class="dropdown" value="frustrated">frustrated.</option>
-            <option class="dropdown" value="angry">&!#$@!%!#*#</option>
-        </select>
+            <option class="dropdown" value="0">How you Feelin?</option>
+            ${moodArray.map(
+                mood =>{
+                    return`<option class="dropdown" value="${mood.id}">${mood.label}</option>`
+                })}
+            </select>
     </div>
 </article>
 <article class="containerMiddle">
@@ -39,7 +40,6 @@ const render = () =>{
     <div class="journalField">
         <h4>Journal Entry</h4>
         <!-- journal entry text field -->
-        <form action="/action_page.php">
             <textarea id="journalField" name="journalField" rows="14" cols="75">
               </textarea>
             </form><br>
@@ -47,40 +47,37 @@ const render = () =>{
     </div>
     <div class="prevEntries">
         <h4>Previous Entries</h4>
-        <div class="prevEntries__scroll"
+        <div class="prevEntries__scroll">
         </div>
     </div>
 </article>
-<article class="containerBottom">
-<!-- github link, @copyright -->
-    <div class="github">
-        <a href="https://github.com/KyleSimmonsC44">Check my GitHub</a>
-    </div>
-    <div class="copyright">
-        <p>©Copyright Kyle Simmons</p>
-    </div>
+
 
     `
 }
 
 eventHub.addEventListener("click", clickEvent =>{
-    if(clickEvent.target.id === "saveEntry"){
+    if(clickEvent.target.id === "saveEntry" && document.querySelector("#mood").value !== "0"){
         const dateOfEntry = document.querySelector("#date").value
         const concept = document.querySelector("#conceptCovered").value
         const entry = document.querySelector("#journalField").value
-        const mood = document.querySelector("#mood").value
+        const moodId = document.querySelector("#mood").value
 
         const newEntry = {
             dateOfEntry,
             concept,
             entry,
-            mood
+            moodId
         }
         saveEntries(newEntry)
     }
 })
 
 export const EntryForm = () =>{
-    render()
+    getMood()
+    .then(()=>{
+        const moods = useMood()
+        render(moods)
+    })
 }
 eventHub.addEventListener("entriesStateChanged", () =>EntryForm())

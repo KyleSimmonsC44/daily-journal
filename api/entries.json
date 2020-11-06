@@ -1,39 +1,123 @@
 {
   "entries": [
     {
-      "dateOfEntry": "2020-10-23",
-      "concept": "blahah",
-      "entry": "              blah",
-      "mood": "happy",
+      "dateOfEntry": "2020-11-05",
+      "concept": "ERRRDDDS",
+      "entry": "              does this work",
+      "moodId": "4",
       "id": 1
     },
     {
-      "dateOfEntry": "2020-10-23",
-      "concept": "...ALot",
-      "entry": "Today i figured out how to use APIs to make my journal entries display on my page after I write one!",
-      "mood": "content",
+      "dateOfEntry": "2020-11-05",
+      "concept": "ERRRDDDS",
+      "entry": "              did i get it?",
+      "moodId": "1",
       "id": 2
     },
     {
-      "dateOfEntry": "2020-10-23",
-      "concept": "CSS",
-      "entry": "              Im trying to figure out more advanced CSS tricks to make my page look better... but my brain is melting",
-      "mood": "meh",
+      "dateOfEntry": "2020-11-05",
+      "concept": "ERRRDDDS",
+      "entry": "              not quite",
+      "moodId": "3",
       "id": 3
     },
     {
-      "dateOfEntry": "2020-10-23",
-      "concept": "testing more css",
-      "entry": "              im getting angry now",
-      "mood": "frustrated",
+      "dateOfEntry": "2020-11-05",
+      "concept": "ERRRDDDS",
+      "entry": "              i dont understand why my save button is broken now",
+      "moodId": "4",
       "id": 4
     },
     {
-      "dateOfEntry": "2020-10-23",
-      "concept": "dfsdfg",
-      "entry": "              ghjfhgdfagfa",
-      "mood": "happy",
+      "dateOfEntry": "2020-11-05",
+      "concept": "ERRRDDDS",
+      "entry": "...how about now",
+      "moodId": "5",
       "id": 5
+    },
+    {
+      "dateOfEntry": "2020-11-05",
+      "concept": "ERRRDDDS",
+      "entry": "              does this work?",
+      "moodId": "3",
+      "id": 6
+    },
+    {
+      "dateOfEntry": "2020-11-05",
+      "concept": "ERRRDDDS",
+      "entry": "              blahhh",
+      "moodId": "2",
+      "id": 7
+    },
+    {
+      "dateOfEntry": "2020-11-05",
+      "concept": "ERRRDDDS",
+      "entry": "              new save entry",
+      "moodId": "1",
+      "id": 8
+    },
+    {
+      "dateOfEntry": "2020-11-05",
+      "concept": "completely new",
+      "entry": "              will this work",
+      "moodId": "4",
+      "id": 9
+    },
+    {
+      "dateOfEntry": "2020-11-05",
+      "concept": "ERRRDDDS",
+      "entry": "will this work now?",
+      "moodId": "4",
+      "id": 10
+    },
+    {
+      "dateOfEntry": "2020-11-05",
+      "concept": "ERRRDDDS",
+      "entry": "did i just fix all of this???",
+      "moodId": "1",
+      "id": 11
+    }
+  ],
+  "moods": [
+    {
+      "id": 1,
+      "label": "Happy!"
+    },
+    {
+      "id": 2,
+      "label": "Content"
+    },
+    {
+      "id": 3,
+      "label": "meh"
+    },
+    {
+      "id": 4,
+      "label": "Confused"
+    },
+    {
+      "id": 5,
+      "label": "Worn Out"
+    },
+    {
+      "id": 6,
+      "label": "...defeated"
+    },
+    {
+      "id": 7,
+      "label": "Exhausted"
+    },
+    {
+      "id": 8,
+      "label": "Angry"
+    },
+    {
+      "id": 9,
+      "label": "CURSING LOUDLY"
+    },
+    {
+      "id": 10,
+      "label": "...there's nothing left"
     }
   ]
 }
