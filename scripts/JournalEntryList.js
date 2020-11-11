@@ -1,6 +1,7 @@
 import { useJournalEntries, getEntries, deleteEntries } from './JournalDataProvider.js'
 import { JournalEntryComponent } from './JournalEntry.js'
 import { EntryForm } from './JournalForm.js'
+import { useMood } from './mood/MoodDataProvider.js'
 /*
  *  Purpose:
  *    To render as many journal entry components as
@@ -39,5 +40,27 @@ const render = (entriesArray) =>{
                     render(updatedEntries)
                 }
             )
+        }
+    })
+
+    eventHub.addEventListener("moodFilter", () =>{
+        if (event.detail.moodId !== "Show All"){
+            const notesArray = useJournalEntries()
+            const moodArray = useMood()
+            const moodThatWasChosen = moodArray.find(moodObject =>{
+                return moodObject.id === parseInt(event.detail.moodId)
+            })
+
+            const filteredNotes = notesArray.filter( noteObj =>{
+                return noteObj.moodId === moodThatWasChosen.id
+            })
+            console.log(filteredNotes)
+            render(filteredNotes)
+        }else{
+            getEntries()
+            .then(() =>{
+                const allEntries = useJournalEntries()
+                render(allEntries)
+            })
         }
     })

@@ -64,9 +64,11 @@ h3{
 #journalField{
 	border: 3px inset rgb(46, 45, 45);
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-	min-width: 552px;
+	min-width: 657px;
+	max-width: 657px;
 	background: radial-gradient(dimgray  0%, #222222 110%);
 	color: white;
+	margin-top: 101.1px;
 }
 select, form{
 	border: 3px inset rgb(46, 45, 45);
@@ -173,4 +175,11 @@ select, form{
 	margin-bottom: 20px;
   } 
 
-  
+  .select{
+	  color: whitesmoke;
+  }
+
+  .prevEntries{
+	min-width: 657px;
+	max-width: 657px;
+  }

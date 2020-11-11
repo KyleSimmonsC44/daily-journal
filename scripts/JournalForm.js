@@ -47,6 +47,8 @@ const render = (moodArray) =>{
     </div>
     <div class="prevEntries">
         <h4>Previous Entries</h4>
+        <div class="select" id="select">
+        </div>
         <div class="prevEntries__scroll">
         </div>
     </div>
