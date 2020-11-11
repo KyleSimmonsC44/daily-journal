@@ -1,7 +1,6 @@
-import { useJournalEntries, getEntries } from './JournalDataProvider.js'
+import { useJournalEntries, getEntries, deleteEntries } from './JournalDataProvider.js'
 import { JournalEntryComponent } from './JournalEntry.js'
 import { EntryForm } from './JournalForm.js'
-
 /*
  *  Purpose:
  *    To render as many journal entry components as
@@ -29,3 +28,16 @@ const render = (entriesArray) =>{
         contentElement.innerHTML =`
         ${journalHTMLRep}`
     }
+
+    eventHub.addEventListener("click", event =>{
+        if (event.target.id.startsWith("deleteNote--")){
+            const [prefix, id] = event.target.id.split("--")
+
+            deleteEntries(id).then(
+                () =>{
+                    const updatedEntries = useJournalEntries()
+                    render(updatedEntries)
+                }
+            )
+        }
+    })

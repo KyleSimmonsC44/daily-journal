@@ -61,7 +61,7 @@ eventHub.addEventListener("click", clickEvent =>{
         const dateOfEntry = document.querySelector("#date").value
         const concept = document.querySelector("#conceptCovered").value
         const entry = document.querySelector("#journalField").value
-        const moodId = document.querySelector("#mood").value
+        const moodId = parseInt(document.querySelector("#mood").value)
 
         const newEntry = {
             dateOfEntry,
