@@ -19,11 +19,14 @@ h1,h2,h3,h4,h5,h6 {
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-weight: 600;
 }
 body{
 	background-color: #222222;
 	background: radial-gradient(ellipse at center,#222222 10%,#000 100%);
-	font-weight: 700;
+	font-weight: 550;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 main{
 	display: flex;
@@ -68,7 +71,7 @@ h3{
 	max-width: 657px;
 	background: radial-gradient(dimgray  0%, #222222 110%);
 	color: white;
-	margin-top: 101.1px;
+	margin-top: 80.64px;
 }
 select, form{
 	border: 3px inset rgb(46, 45, 45);
@@ -81,6 +84,7 @@ select, form{
 #buttonDelete{
 	border: 3px inset rgb(46, 45, 45);
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+	font-weight: 700;
 }
 #saveEntry{
 	border: 3px inset rgb(46, 45, 45);
@@ -119,6 +123,8 @@ select, form{
 	/* border-radius: 10%;  */
 	padding: 5%;
 	min-width: 600px;
+	/* -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; */
 
 }
 
@@ -182,4 +188,9 @@ select, form{
   .prevEntries{
 	min-width: 657px;
 	max-width: 657px;
+  }
+
+  .deleteButton, .editButton{
+	font-weight: 700;
+	/* background-color: transparent; */
   }

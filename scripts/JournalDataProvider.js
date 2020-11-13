@@ -6,6 +6,8 @@
  *      the entries for different purposes.
  */
 
+import { FilterBar } from "./filter/FilterBar.js"
+
 // This is the original data.
 const eventHub = document.querySelector(".container")
 
@@ -45,11 +47,25 @@ export const saveEntries = entries => {
     })
     .then(getEntries)
     .then(dispatchStateChangeEvent)
+    .then(FilterBar)
 }
 
 export const deleteEntries = entryId => {
     return fetch(`http://localhost:8088/entries/${entryId}`, {
-        method: "DELETE"
+        method: "DELETE",
     })
         .then(getEntries)
+}
+
+export const editEntries = (entry, entryId) =>{
+    return fetch(`http://localhost:8088/entries/${entryId}`,{
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(entry)
+    })
+        .then(getEntries)
+        .then(dispatchStateChangeEvent)
+        .then(FilterBar)
 }

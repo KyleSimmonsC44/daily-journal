@@ -43,6 +43,22 @@ const render = (entriesArray) =>{
         }
     })
 
+    eventHub.addEventListener("click", event =>{
+        if (event.target.id.startsWith("editNote--")){
+            
+            const [prefix, id] = event.target.id.split("--")
+            const customEvent = new CustomEvent("editButton", {
+                detail:{
+                    entryId: id
+                }
+            })
+            eventHub.dispatchEvent(customEvent)
+            // console.log("Note Id To Edit: ", customEvent.detail.entryId)
+        }
+    })
+
+
+
     eventHub.addEventListener("moodFilter", () =>{
         if (event.detail.moodId !== "Show All"){
             const notesArray = useJournalEntries()
@@ -54,7 +70,7 @@ const render = (entriesArray) =>{
             const filteredNotes = notesArray.filter( noteObj =>{
                 return noteObj.moodId === moodThatWasChosen.id
             })
-            console.log(filteredNotes)
+            // console.log(filteredNotes)
             render(filteredNotes)
         }else{
             getEntries()

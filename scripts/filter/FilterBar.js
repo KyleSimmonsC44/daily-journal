@@ -34,6 +34,6 @@ eventHub.addEventListener("change", event =>{
             }
         })
         eventHub.dispatchEvent(customEvent)
-        
+        console.log(customEvent.detail.moodId)
     }
 })

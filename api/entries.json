@@ -1,14 +1,7 @@
 {
   "entries": [
     {
-      "dateOfEntry": "2020-11-11",
-      "concept": "Sorting By Mood",
-      "entry": "              This Entry is Happy",
-      "moodId": 1,
-      "id": 1
-    },
-    {
-      "dateOfEntry": "",
+      "dateOfEntry": "2020-11-12",
       "concept": "Sorting By Mood",
       "entry": "              This Entry is Content",
       "moodId": 2,
@@ -43,11 +36,32 @@
       "id": 6
     },
     {
-      "dateOfEntry": "",
+      "dateOfEntry": "2020-11-12",
       "concept": "Sorting By Mood",
       "entry": "              This Entry is exhausted",
       "moodId": 7,
       "id": 7
+    },
+    {
+      "dateOfEntry": "2020-11-12",
+      "concept": "Edit Functionality",
+      "entry": "              will this post?? ok how about edit??",
+      "moodId": 9,
+      "id": 8
+    },
+    {
+      "dateOfEntry": "2020-11-12",
+      "concept": "TEST",
+      "entry": "              TEST EDITED TEST",
+      "moodId": 10,
+      "id": 9
+    },
+    {
+      "dateOfEntry": "2020-11-12",
+      "concept": "Edit Functionality",
+      "entry": "              Does This Post",
+      "moodId": 5,
+      "id": 10
     }
   ],
   "moods": [

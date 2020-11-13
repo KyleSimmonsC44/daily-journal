@@ -1,6 +1,6 @@
 export const JournalEntryComponent = (entry) => {
     return `
-        <section id="entry--${entry.id}" class="journalEntry">
+        <section id="entry--${entry.id}"  class="journalEntry" value="${entry.id}">
             
                 <p>Date: ${entry.dateOfEntry}<p>
                 <p>Concept: ${entry.concept}</p>
@@ -8,6 +8,7 @@ export const JournalEntryComponent = (entry) => {
                 <p>Mood: ${entry.mood.label}</p>
                 <div class="delete">
                 <button class="deleteButton" id="deleteNote--${entry.id}">Delete</button>
+                <button class="editButton" id="editNote--${entry.id}">Edit</button>
                 </div>
         </section>
     `
